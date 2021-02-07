@@ -2,7 +2,7 @@
 
 Tool used to create Raspberry Pi OS images. (Previously known as Raspbian).
 
-_This fork creates the [Comitup](https://davesteele.github.io/comitup/) spin_
+_This fork creates the [Glimmr](https://d8ahazard/glimmr) + [Comitup](https://davesteele.github.io/comitup/) spin_
 
 
 ## Dependencies
