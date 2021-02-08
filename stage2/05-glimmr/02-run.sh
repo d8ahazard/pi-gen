@@ -2,7 +2,7 @@
 rm -rf ${ROOTFS_DIR}/home/glimmrtv/ws281x
 git clone https://github.com/jgarff/rpi_ws281x ${ROOTFS_DIR}/home/glimmrtv/ws281x
 cd ${ROOTFS_DIR}/home/glimmrtv/ws281x
-apt-get -y install scons
+apt-get -y install scons gcc
 scons
 gcc -shared -o ws2811.so *.o
 cp ./ws2811.so ${ROOTFS_DIR}/usr/lib/ws2811.so
