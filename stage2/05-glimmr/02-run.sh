@@ -9,7 +9,7 @@ cp ./ws2811.so ${ROOTFS_DIR}/usr/lib/ws2811.so
 rm -rf ${ROOTFS_DIR}/home/glimmrtv/glimmr
 git clone -b dev https://github.com/d8ahazard/glimmr ${ROOTFS_DIR}/home/glimmrtv/glimmr
 # Install update script to init.d 
-sudo chmod 777 ${ROOTFS_DIR}/home/glimmrtv/glimmr/update_pi.sh
+sudo chmod 777 ${ROOTFS_DIR}/home/glimmrtv/glimmr/script/update_pi.sh
 sudo ln -sf ${ROOTFS_DIR}/home/glimmrtv/glimmr/script/update_pi.sh ${ROOTFS_DIR}/etc/init.d/update_glimmr.sh
 cd ${ROOTFS_DIR}/home/glimmrtv/glimmr
 dotnet publish ./src/Glimmr.csproj /p:PublishProfile=LinuxARM -o ${ROOTFS_DIR}/bin/
