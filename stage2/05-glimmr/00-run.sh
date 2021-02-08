@@ -2,7 +2,7 @@
 install -m 644 files/comitup.conf ${ROOTFS_DIR}/etc/comitup.conf
 useradd -m glimmrtv
 usermod -aG sudo glimmrtv 
-touch ${ROOTFS_DIR}/home/glimmrtv
+mkdir -p ${ROOTFS_DIR}/home/glimmrtv
 cd ${ROOTFS_DIR}/home/glimmrtv
 # Check dotnet installation
 wget https://dotnetcli.blob.core.windows.net/dotnet/Sdk/master/dotnet-sdk-latest-linux-arm.tar.gz
