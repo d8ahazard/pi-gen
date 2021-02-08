@@ -7,6 +7,7 @@ rm -rf ${ROOTFS_DIR}/home/glimmrtv/dotnet-sdk*
 wget https://dotnetcli.blob.core.windows.net/dotnet/Sdk/master/dotnet-sdk-latest-linux-arm.tar.gz
 sudo mkdir -p ${ROOTFS_DIR}/usr/share/dotnet
 sudo tar -zxf dotnet-sdk-latest-linux-arm.tar.gz -C ${ROOTFS_DIR}/usr/share/dotnet
-sudo ln -sf ${ROOTFS_DIR}/usr/share/dotnet/dotnet ${ROOTFS_DIR}/usr/bin/dotnet
+sudo tar -zxf dotnet-sdk-latest-linux-arm.tar.gz -C /usr/share/dotnet
+sudo ln -sf ${ROOTFS_DIR}/usr/share/dotnet/dotnet /bin/dotnet
 rm -rf ${ROOTFS_DIR}/dotnet-sdk*
 
