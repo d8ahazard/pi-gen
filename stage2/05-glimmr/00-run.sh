@@ -12,6 +12,5 @@ sudo tar -zxf dotnet-sdk-latest-linux-arm.tar.gz -C ${ROOTFS_DIR}/usr/share/dotn
 sudo tar -zxf dotnet-sdk-latest-linux-x64.tar.gz -C /usr/share/dotnet
 sudo ln -sf /usr/share/dotnet/dotnet /bin/dotnet
 sudo ln -sf ${ROOTFS_DIR}/usr/share/dotnet/dotnet ${ROOTFS_DIR}/bin/dotnet
-r
 rm -rf ${ROOTFS_DIR}/dotnet-sdk*
 
