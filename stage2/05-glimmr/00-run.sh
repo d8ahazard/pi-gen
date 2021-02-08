@@ -1,7 +1,7 @@
 #!/bin/bash -e
 install -m 644 files/comitup.conf ${ROOTFS_DIR}/etc/comitup.conf
-# id -u glimmrtv &>/dev/null || useradd -m glimmrtv
-# usermod -aG sudo glimmrtv 
+useradd -m glimmrtv
+usermod -aG sudo glimmrtv 
 touch ${ROOTFS_DIR}/home/glimmrtv
 cd ${ROOTFS_DIR}/home/glimmrtv
 # Check dotnet installation
