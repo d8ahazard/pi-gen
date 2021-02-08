@@ -1,7 +1,4 @@
 #!/bin/bash -e
-useradd -m glimmrtv
-usermod -aG sudo glimmrtv 
-mkdir -p ${ROOTFS_DIR}/home/glimmrtv
 rm -rf ${ROOTFS_DIR}/home/glimmrtv/ws281x
 git clone https://github.com/jgarff/rpi_ws281x ${ROOTFS_DIR}/home/glimmrtv/ws281x
 cd ${ROOTFS_DIR}/home/glimmrtv/ws281x
