@@ -5,7 +5,7 @@ cd ${ROOTFS_DIR}/home/glimmrtv/ws281x
 scons
 gcc -shared -o ws2811.so *.o
 cp ./ws2811.so ${ROOTFS_DIR}/usr/lib/ws2811.so
-git clone -b $BRANCH https://github.com/d8ahazard/glimmr ${ROOTFS_DIR}/home/glimmrtv/glimmr
+git clone -b dev https://github.com/d8ahazard/glimmr ${ROOTFS_DIR}/home/glimmrtv/glimmr
 # Install update script to init.d 
 sudo chmod 777 ${ROOTFS_DIR}/home/glimmrtv/glimmr/update_pi.sh
 sudo ln -s ${ROOTFS_DIR}/home/glimmrtv/glimmr/update_pi.sh ${ROOTFS_DIR}/etc/init.d/update_glimmr.sh
