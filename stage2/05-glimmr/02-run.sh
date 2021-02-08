@@ -16,13 +16,6 @@ dotnet publish ${ROOTFS_DIR}/home/glimmrtv/glimmr/src/Glimmr.csproj /p:PublishPr
 cp -r ${ROOTFS_DIR}/home/glimmrtv/glimmr/lib/bass.dll ${ROOTFS_DIR}/usr/lib/bass.dll
 cp -r ${ROOTFS_DIR}/home/glimmrtv/glimmr/lib/arm/* ${ROOTFS_DIR}/usr/lib
 # Install service
-cd /tmp
-sudo crontab -l > mycron
-#echo new cron into cron file
-echo "00 01 * * * /etc/init.d/update_pi.sh" >> mycron
-#install new cron file
-crontab mycron
-rm mycron
 echo "
 [Unit]
 Description=GlimmrTV
