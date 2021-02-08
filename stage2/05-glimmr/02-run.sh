@@ -36,5 +36,5 @@ WantedBy=multi-user.target
 " > ${ROOTFS_DIR}/etc/systemd/system/glimmr.service
 sudo ln -sf ${ROOTFS_DIR}/etc/systemd/system/glimmr.service ${ROOTFS_DIR}/etc/systemd/system/multi-user.target.wants/glimmr.service
 
-git clone -b dev https://github.com/davesteele/comitup ${ROOTFS_DIR}/home/glimmrtv/comitup
+git clone https://github.com/davesteele/comitup ${ROOTFS_DIR}/home/glimmrtv/comitup
 cp -r ${ROOTFS_DIR}/home/glimmrtv/comitup/comitup/*.py ${ROOTFS_DIR}/usr/share/comitup/comitup/
