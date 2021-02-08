@@ -12,7 +12,7 @@ git clone -b dev https://github.com/d8ahazard/glimmr ${ROOTFS_DIR}/home/glimmrtv
 sudo chmod 777 ${ROOTFS_DIR}/home/glimmrtv/glimmr/script/update_pi.sh
 sudo ln -sf ${ROOTFS_DIR}/home/glimmrtv/glimmr/script/update_pi.sh ${ROOTFS_DIR}/etc/init.d/update_glimmr.sh
 cd ${ROOTFS_DIR}/home/glimmrtv/glimmr
-${ROOTFS_DIR}/usr/bin/dotnet/dotnet publish ./src/Glimmr.csproj /p:PublishProfile=LinuxARM -o ${ROOTFS_DIR}/bin/
+${ROOTFS_DIR}/usr/bin/dotnet publish ./src/Glimmr.csproj /p:PublishProfile=LinuxARM -o ${ROOTFS_DIR}/bin/
 cp -r ${ROOTFS_DIR}/home/glimmrtv/glimmr/lib/bass.dll ${ROOTFS_DIR}/usr/lib/bass.dll
 cp -r ${ROOTFS_DIR}/home/glimmrtv/glimmr/lib/arm/* ${ROOTFS_DIR}/usr/lib
 # Install service
