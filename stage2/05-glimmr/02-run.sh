@@ -19,6 +19,7 @@ cp -r ${ROOTFS_DIR}/home/glimmrtv/glimmr/lib/arm/* ${ROOTFS_DIR}/usr/lib
 echo "
 [Unit]
 Description=GlimmrTV
+After=network-online.target
 
 [Service]
 Type=simple

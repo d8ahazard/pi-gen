@@ -23,3 +23,5 @@ libopengl-dev
 git
 gcc
 xauth
+avahi-daemon
+x11-xserver-utils
